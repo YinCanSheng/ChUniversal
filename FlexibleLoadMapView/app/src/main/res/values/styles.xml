@@ -1,0 +1,54 @@
+<resources>
+    <!--ChenHong-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--app统一主题-无导航-白底-->
+    <style name="AppThemeUnite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_light</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--用于控制toolbar溢出菜单的样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <!--让Menu显示在Toolbar下方-->
+    <style name="toolbarMenu">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--设置不覆盖锚点-->
+    </style>
+
+    <!--Toolbar-颜色-->
+    <style name="toolbar_blue_theme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <!--<item name="android:homeAsUpIndicator">@mipmap/ic_launcher</item>-->
+    </style>
+
+    <!--等待框主题-->
+    <style name="AppLoginTheme" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!--AppCompatActivity兼容的-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="AppThemeUnite.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppThemeUnite.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

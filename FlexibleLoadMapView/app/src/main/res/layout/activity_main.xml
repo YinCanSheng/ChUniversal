@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jinye.ch.flexibleloadmapview.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout_ManinActivity_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/toolbarMenu">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Toolbar_ManinActivity_head"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="主页"
+            app:titleTextColor="@android:color/white"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/MapView_MainActivity_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AppBarLayout_ManinActivity_head"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FloatingActionButton_MainActivity_location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        app:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/location"/>
+
+</RelativeLayout>
